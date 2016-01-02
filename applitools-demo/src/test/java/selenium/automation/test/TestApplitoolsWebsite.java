@@ -32,7 +32,7 @@ public class TestApplitoolsWebsite {
             // Make sure to use the returned driver from this point on.
             driver = eyes.open(driver, "AEM", "TestHomePage", new RectangleSize(1024, 768));
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-            driver.get("http://localhost:4502" + "/libs/granite/core/content/login.html?resource=%2Fcontent%2Faemdemo%2Fen.html&$$login$$=%24%24login%24%24");
+            driver.get("http://aemauthor:4502" + "/libs/granite/core/content/login.html?resource=%2Fcontent%2Faemdemo%2Fen.html&$$login$$=%24%24login%24%24");
             driver.findElement(By.id("username")).clear();
             driver.findElement(By.id("username")).sendKeys("admin");
             driver.findElement(By.id("password")).clear();
@@ -40,9 +40,9 @@ public class TestApplitoolsWebsite {
             driver.findElement(By.cssSelector("button.coral-Button.coral-Button--primary")).click();
             // Visual validation point #1
             eyes.checkWindow("English Page");
-            driver.findElement(By.linkText("Français")).click();
+            driver.findElement(By.linkText("FranÃ§ais")).click();
             // Visual validation point #2
-            eyes.checkWindow("Français page");
+            eyes.checkWindow("FranÃ§ais page");
 
             // End visual testing. Validate visual correctness.
             eyes.close();
