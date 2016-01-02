@@ -28,7 +28,8 @@ public class TestAEMDemoPage {
     driver.findElement(By.id("password")).clear();
     driver.findElement(By.id("password")).sendKeys("admin");
     driver.findElement(By.cssSelector("button.coral-Button.coral-Button--primary")).click();
-    driver.findElement(By.linkText("Français")).click();
+    driver.get(baseUrl + "/content/aemdemo/fr.html");
+    //driver.findElement(By.linkText("Français")).click();
     driver.findElement(By.linkText("English")).click();
   }
 
