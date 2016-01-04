@@ -8,7 +8,7 @@ ENV CQ_PORT 4502
 ENV PUBLISH_HOST publish
 
 #RUN sudo mkdir -p /var/jenkins_home/jobs/AEMDemo_default/workspace
-#COPY ../../AEMI_default/workspace/ /opt/aem
+COPY aemdemo-project /opt/aem
 
 #ENV DEMOAPP_PATH /var/jenkins_home/jobs/AEMDemo_default/workspace/aemdemo-project
 ENV DEMOAPP_PATH /opt/aem/aemdemo-project
