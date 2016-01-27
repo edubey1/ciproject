@@ -16,7 +16,7 @@ public class TestAEMDemoPage {
   public void setUp() throws Exception {
     //driver = new FirefoxDriver();
 	driver = new ChromeDriver();
-    baseUrl = "http://aemauthor:4502";
+    baseUrl = "http://localhost:4502";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
