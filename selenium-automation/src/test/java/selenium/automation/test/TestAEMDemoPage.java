@@ -32,7 +32,7 @@ public class TestAEMDemoPage {
     driver.findElement(By.id("password")).sendKeys("admin");
     //driver.findElement(By.id("submit-button")).click();
     //WebElement element = driver.findElement(By.id("submit-button"));
-    WebElement element = driver.findElement(By.cssSelector("button.coral-Button.coral-Button--primary"));
+    WebElement element = driver.findElement(By.cssSelector("button#submit-button.coral-Button.coral-Button--primary"));
     Actions action = new Actions(driver);
     action.moveToElement(element).click().perform();
     
