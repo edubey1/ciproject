@@ -32,7 +32,7 @@ public class TestApplitoolsWebsite {
             // Make sure to use the returned driver from this point on.
             driver = eyes.open(driver, "AEM", "TestHomePage", new RectangleSize(1024, 768));
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-            driver.get("http://aemauthor:4502" + "/libs/granite/core/content/login.html?resource=%2Fcontent%2Faemdemo%2Fen.html&$$login$$=%24%24login%24%24");
+            driver.get("http://localhost:4502" + "/libs/granite/core/content/login.html?resource=%2Fcontent%2Faemdemo%2Fen.html&$$login$$=%24%24login%24%24");
             driver.findElement(By.id("username")).clear();
             driver.findElement(By.id("username")).sendKeys("admin");
             driver.findElement(By.id("password")).clear();
