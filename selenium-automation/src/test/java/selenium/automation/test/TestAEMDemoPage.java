@@ -23,6 +23,7 @@ public class TestAEMDemoPage {
   @Test
   public void validateHomePage() throws Exception {
     driver.get(baseUrl + "/libs/granite/core/content/login.html?resource=%2Fcontent%2Faemdemo%2Fen.html&$$login$$=%24%24login%24%24");
+    driver.manage().window().maximize();
     driver.findElement(By.id("username")).clear();
     driver.findElement(By.id("username")).sendKeys("admin");
     driver.findElement(By.id("password")).clear();
