@@ -35,7 +35,7 @@ public class HelloServiceImpl implements HelloService {
 	
 	@Override
 	public String getMessage() {
-		return "This is 0.0.2 snapshot " + settings.getSlingId();
+		return "This is 0.0.3 snapshot " + settings.getSlingId();
 	}
 
 }
