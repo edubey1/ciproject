@@ -19,7 +19,7 @@
 	<parent>
         <groupId>com.hcl.dccs.aem.demo</groupId>
         <artifactId>aemdemo</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <version>0.0.4-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
 	</parent>
 
@@ -364,12 +364,12 @@
         <dependency>
         	<groupId>com.hcl.dccs.aem.demo</groupId>
         	<artifactId>aemdemo.it.tests</artifactId>
-        	<version>0.0.3-SNAPSHOT</version>
+        	<version>0.0.4-SNAPSHOT</version>
         </dependency>
         <dependency>
         	<groupId>com.hcl.dccs.aem.demo</groupId>
         	<artifactId>aemdemo.core</artifactId>
-        	<version>0.0.3-SNAPSHOT</version>
+        	<version>0.0.4-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
