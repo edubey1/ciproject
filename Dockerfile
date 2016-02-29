@@ -11,7 +11,7 @@ ENV PUBLISH_HOST publish
 COPY aemdemo-project /opt/aem
 
 #ENV DEMOAPP_PATH /var/jenkins_home/jobs/AEMDemo_default/workspace/aemdemo-project
-ENV DEMOAPP_PATH /opt/aem/aemdemo-project
+ENV DEMOAPP_PATH /opt/aem
 ENV DEMOAPP_BUNDLE_JAR $DEMOAPP_PATH/core/target/aemdemo.core-0.0.1-SNAPSHOT.jar
 ENV DEMOAPP_CONTENT_PACKAGE $DEMOAPP_PATH/ui.content/target/aemdemo.ui.content-0.0.1-SNAPSHOT.zip
 ENV DEMOAPP_UI_PACKAGE $DEMOAPP_PATH/ui.apps/target/aemdemo.ui.apps-0.0.1-SNAPSHOT.zip
