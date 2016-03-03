@@ -25,7 +25,7 @@ public class TestAEMDemoPage {
   public void setUp() throws Exception {
 	DesiredCapabilities capabilities = DesiredCapabilities.phantomjs();
     driver = new PhantomJSDriver(capabilities);
-    baseUrl = "http://172.17.0.3:4502";
+    baseUrl = "http://172.17.0.4:4502";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
